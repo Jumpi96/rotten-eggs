@@ -1,0 +1,3 @@
+[submodule "rotten-eggs-api"]
+	path = rotten-eggs-api
+	url = https://github.com/Jumpi96/python-django-assessment
