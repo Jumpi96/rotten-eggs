@@ -4,6 +4,8 @@ import Rating from 'react-rating';
 import { fetchMovie, submitRating } from './hooks';
 import { Redirect } from "react-router-dom";
 
+import RatingItem from './RatingItem/component';
+
 import './component.css';
 
 function CreateRating(props) {
@@ -51,6 +53,8 @@ function CreateRating(props) {
           onClick={handleSubmit}>
           Save rating
         </button>
+        <hr />
+        {movie ? movie.ratings.map((r) => <RatingItem rating={r} />) : "" }
       </div>
     );
   }
