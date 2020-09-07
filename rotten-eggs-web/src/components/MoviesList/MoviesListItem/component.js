@@ -11,6 +11,7 @@ const MoviesListItem = (props) => {
   return (
     <tr key={props.movie.id}>
       <td>{props.movie.title}</td>
+      <td>{props.movie.released_on}</td>
       <td>
         <Rating
           readonly={true}

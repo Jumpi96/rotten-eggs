@@ -32,6 +32,7 @@ const MoviesList = () => {
         <thead>
           <tr>
             <th scope="col">Title</th>
+            <th scope="col">Released on</th>
             <th scope="col">Rating</th>
             <th scope="col"></th>
           </tr>
