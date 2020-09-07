@@ -38,12 +38,17 @@ function CreateRating(props) {
           <p>Enter your comment:</p>
           <input
             type='text'
+            className='form-control'
             value={comment}
+            placeholder="Complete the comment to save the rating!"
             onChange={(e) => setComment(e.target.value)}
           />
         </div>
         <p className="error">{error}</p>
-        <button className="btn btn-danger" onClick={handleSubmit}>
+        <button 
+          className="btn btn-danger"
+          disabled={comment === ""}
+          onClick={handleSubmit}>
           Save rating
         </button>
       </div>
