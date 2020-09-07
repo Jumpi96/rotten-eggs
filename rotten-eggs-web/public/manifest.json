@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Rotten Eggs",
+  "name": "Create Rotten Eggs Sample",
   "icons": [
     {
       "src": "favicon.ico",
