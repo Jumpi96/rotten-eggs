@@ -11,15 +11,9 @@ function App() {
     <Router>
       <div>
         <nav className="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-          <a className="navbar-brand" href=".">Rotten Eggs</a>
-          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarsExampleDefault">
+          <a className="navbar-brand" href="/">Rotten Eggs</a>
+          <div id="navbarsExampleDefault">
             <ul className="navbar-nav mr-auto">
-              <li className="nav-item">
-                <Link className="nav-link" to="/">Home</Link>
-              </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/movies-list">Movies</Link>
               </li>
