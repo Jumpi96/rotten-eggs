@@ -1,6 +1,6 @@
 
 export async function fetchMovies(setMovies, setErrors) {
-    const res = await fetch("http://localhost:8000/api/movies/");
+    const res = await fetch(`${process.env.REACT_APP_API_URL}/api/movies/`);
     res
         .json()
         .then(res => setMovies(res))

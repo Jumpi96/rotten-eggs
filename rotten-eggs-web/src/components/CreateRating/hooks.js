@@ -1,6 +1,6 @@
 
 export async function fetchMovie(movieId, setMovie, setErrors) {
-    const res = await fetch(`http://localhost:8000/api/movies/${movieId}`);
+    const res = await fetch(`${process.env.REACT_APP_API_URL}/api/movies/${movieId}`);
     res
         .json()
         .then(res => setMovie(res))
@@ -8,7 +8,7 @@ export async function fetchMovie(movieId, setMovie, setErrors) {
 }
 
 export async function submitRating(rating, setErrors, setSubmitted) {
-    const res = await fetch("http://localhost:8000/api/ratings/", {
+    const res = await fetch(`${process.env.REACT_APP_API_URL}/api/ratings/`, {
       method: "POST",
       body: JSON.stringify(rating),
       headers: {'Content-Type': 'application/json', 'Authorization': 'Basic ZGV2ZWxvcGVyOkNIQU5HRU1F'}
