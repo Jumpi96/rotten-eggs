@@ -11,7 +11,7 @@ export async function submitRating(rating, setErrors, setSubmitted) {
     const res = await fetch("http://localhost:8000/api/ratings/", {
       method: "POST",
       body: JSON.stringify(rating),
-      headers: {'Content-Type': 'application/json'}
+      headers: {'Content-Type': 'application/json', 'Authorization': 'Basic ZGV2ZWxvcGVyOkNIQU5HRU1F'}
     });
     if (res.status === 201) { 
         setSubmitted(true);
